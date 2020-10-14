@@ -1,0 +1,154 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scenes/Cenas/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/Play.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Buttons/button_config1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/UI/Odyssey_Logo.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Cenas/Confirmation_Dialog.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Sons/Selection.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sons/Popup.wav" type="AudioStream" id=8]
+[ext_resource path="res://Scenes/Cenas/Difficulty_Control.tscn" type="PackedScene" id=9]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 14, 24, 13 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 14, 24, 13 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 14, 24, 13 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 120, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 120, 14, 24, 13 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 165, 10 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 4 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 570.0, 700.0, 680.0, 770.0, 1060.0, 958.111, 610.0, 887.596, 793.0, 863.0, 45.3883 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 270.0 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 540.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="TouchScreenButton" parent="."]
+position = Vector2( 210, 610 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 1 )
+pressed = SubResource( 2 )
+
+[node name="Quit" type="TouchScreenButton" parent="."]
+position = Vector2( 210, 887.596 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 3 )
+pressed = SubResource( 4 )
+
+[node name="Sign_in" type="TouchScreenButton" parent="."]
+position = Vector2( 23.9244, 28.4929 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 3 )
+
+[node name="Leaderboard" type="TouchScreenButton" parent="."]
+position = Vector2( 210, 700 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 5 )
+pressed = SubResource( 6 )
+
+[node name="Options" type="TouchScreenButton" parent="."]
+position = Vector2( 210, 793 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 7 )
+pressed = SubResource( 8 )
+
+[node name="creditos" type="TouchScreenButton" parent="."]
+position = Vector2( 5.20044, 1055.33 )
+shape = SubResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="creditos_resume" type="Label" parent="creditos"]
+margin_left = 2.46686
+margin_top = 0.49707
+margin_right = 248.467
+margin_bottom = 22.4971
+custom_fonts/font = SubResource( 10 )
+text = "Copyright (C) 2020 Uriel \"Ghost\" Anderson"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 270, 470 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 5 )
+
+[node name="Confirmation_Dialog" parent="." instance=ExtResource( 6 )]
+
+[node name="Sound_Selection" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "Shot Sound"
+
+[node name="Sound_POPUP" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "Shot Sound"
+
+[node name="Label_Loged" type="Label" parent="."]
+margin_left = 65.0
+margin_top = 38.0
+margin_right = 270.0
+margin_bottom = 52.0
+custom_fonts/font = SubResource( 11 )
+text = "Loged Out"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D_Control" parent="." instance=ExtResource( 9 )]
+visible = false
+[connection signal="tree_exiting" from="." to="." method="_on_Menu_tree_exiting"]
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Sign_in" to="." method="_on_Sign_in_pressed"]
+[connection signal="pressed" from="Leaderboard" to="." method="_on_Leaderboard_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="creditos" to="." method="_on_creditos_pressed"]

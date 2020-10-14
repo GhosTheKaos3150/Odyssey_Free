@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/UI/Tutorial_Shots.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/Frame_Message.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/UI/Square_Button.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 14, 15 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 14, 1, 14, 14 )
+
+[node name="Tutorial_Shots" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 539.299 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 270.221 ]
+}
+
+[node name="Screen" type="NinePatchRect" parent="."]
+margin_left = 55.8176
+margin_top = 380.022
+margin_right = 198.818
+margin_bottom = 503.022
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 112.0
+margin_top = 419.0
+margin_right = 430.0
+margin_bottom = 472.0
+rect_pivot_offset = Vector2( 62.4562, 4.08316 )
+custom_fonts/font = SubResource( 1 )
+text = "TITULO"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="Label" parent="."]
+margin_left = 112.0
+margin_top = 472.0
+margin_right = 430.0
+margin_bottom = 650.0
+custom_fonts/font = SubResource( 2 )
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 249.113, 668.313 )
+scale = Vector2( 3, 3 )
+normal = SubResource( 3 )
+pressed = SubResource( 4 )
+[connection signal="pressed" from="TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]

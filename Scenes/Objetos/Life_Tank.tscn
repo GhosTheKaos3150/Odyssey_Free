@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/Objetos/Life_Tank.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Objetos/Capsulas/Capsules_sheet.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Particulas/Explosion_Yellow1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sons/Powerup.wav" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Sons/Item_Explosion.wav" type="AudioStream" id=9]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), null, null, null, null ],
+"loop": true,
+"name": "EXPLODES",
+"speed": 15.0
+} ]
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 17.8651
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 20.0
+
+[node name="Life_Tank" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 3 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+shape = SubResource( 4 )
+shape_centered = false
+shape_visible = false
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Sound_UP" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+bus = "Shot Sound"
+
+[node name="Sound_Blows" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+bus = "Shot Sound"
+[connection signal="area_entered" from="." to="." method="_on_Life_Tank_area_entered"]
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="pressed" from="TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="finished" from="Sound_UP" to="." method="_on_Sound_UP_finished"]
+[connection signal="finished" from="Sound_Blows" to="." method="_on_Sound_Blows_finished"]

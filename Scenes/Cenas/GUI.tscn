@@ -1,0 +1,247 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Scenes/Cenas/GUI.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Personagens/Player/HUD/LifeBar.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Personagens/Player/HUD/TimeBar.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Play.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Musica/Wait.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/UI/Buttons/Menu's1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sons/Selection.wav" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=14]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 8, 48 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 16, 0, 8, 48 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 16, 0, 8, 48 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 8, 48 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 80
+font_data = ExtResource( 14 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 4 )
+region = Rect2( 72, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 72, 14, 23, 13 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 144, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
+region = Rect2( 144, 14, 24, 13 )
+
+[sub_resource type="DynamicFont" id=10]
+outline_color = Color( 0.203922, 0.929412, 0.929412, 1 )
+use_mipmaps = true
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 14 )
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 164.0, 1056.0, 1000.0, 610.0, 230.0, 1082.0 ],
+"_edit_vertical_guides_": [ 20.0, 520.0, 70.0, 470.0, 374.0, 166.0, 230.0, 318.0 ]
+}
+
+[node name="LifeBar" type="TextureProgress" parent="."]
+margin_left = 20.0
+margin_top = 864.0
+margin_right = 84.0
+margin_bottom = 912.0
+rect_scale = Vector2( 4, 4 )
+value = 50.0
+texture_under = SubResource( 1 )
+texture_progress = SubResource( 2 )
+fill_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RechargeBar" type="TextureProgress" parent="."]
+margin_left = 487.0
+margin_top = 867.0
+margin_right = 495.0
+margin_bottom = 915.0
+rect_scale = Vector2( 4, 3.948 )
+value = 50.0
+texture_under = SubResource( 3 )
+texture_progress = SubResource( 4 )
+fill_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 540.0
+margin_bottom = 230.0
+color = Color( 0.0705882, 0.0705882, 0.0705882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 122.0
+margin_top = 108.0
+margin_right = 412.0
+margin_bottom = 188.0
+custom_fonts/font = SubResource( 5 )
+text = "0"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Menu" type="TouchScreenButton" parent="."]
+position = Vector2( 20, 132 )
+scale = Vector2( 4, 4 )
+normal = ExtResource( 7 )
+pressed = ExtResource( 7 )
+
+[node name="Pause_Menu" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Pause_Menu"]
+margin_top = 230.0
+margin_right = 540.0
+margin_bottom = 1069.0
+color = Color( 0, 0, 0, 0.254902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause_Title" type="Label" parent="Pause_Menu"]
+margin_top = 440.0
+margin_right = 536.0
+margin_bottom = 550.0
+custom_fonts/font = SubResource( 5 )
+text = "PAUSA"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Quit" type="TouchScreenButton" parent="Pause_Menu"]
+position = Vector2( 278, 720 )
+scale = Vector2( 4, 4 )
+normal = SubResource( 6 )
+pressed = SubResource( 7 )
+
+[node name="Reload" type="TouchScreenButton" parent="Pause_Menu"]
+position = Vector2( 170, 720 )
+scale = Vector2( 4, 4 )
+normal = SubResource( 8 )
+pressed = SubResource( 9 )
+
+[node name="Label" type="Label" parent="Pause_Menu/Reload"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -43.5
+margin_top = -8.88501
+margin_right = 43.5
+margin_bottom = 8.11499
+rect_scale = Vector2( 0.25, 0.25 )
+rect_pivot_offset = Vector2( 43.5, 8.5 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.203922, 0.929412, 0.929412, 1 )
+text = "REINICIAR"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music_Slider" type="HSlider" parent="Pause_Menu"]
+margin_left = 199.405
+margin_top = 599.302
+margin_right = 388.405
+margin_bottom = 621.302
+min_value = -60.0
+max_value = 20.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="music_label" type="Label" parent="Pause_Menu/Music_Slider"]
+margin_left = -52.1117
+margin_top = -10.8469
+margin_right = 27.8883
+margin_bottom = 21.1531
+rect_scale = Vector2( 1.2, 1.2 )
+custom_fonts/font = SubResource( 11 )
+text = "Music"
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FX_Slider" type="HSlider" parent="Pause_Menu"]
+margin_left = 199.405
+margin_top = 631.302
+margin_right = 388.405
+margin_bottom = 653.302
+min_value = -60.0
+max_value = 20.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sound_label" type="Label" parent="Pause_Menu/FX_Slider"]
+margin_left = -53.256
+margin_top = -10.7059
+margin_right = 26.744
+margin_bottom = 21.2941
+rect_scale = Vector2( 1.2, 1.2 )
+custom_fonts/font = SubResource( 11 )
+text = "Sound"
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sound_SELECTION" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+
+[node name="Sound_Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+[connection signal="pressed" from="Button_Menu" to="." method="_on_Menu_pressed"]
+[connection signal="pressed" from="Pause_Menu/Button_Quit" to="." method="_on_Button_Quit_pressed"]
+[connection signal="pressed" from="Pause_Menu/Reload" to="." method="_on_Reload_pressed"]
+[connection signal="value_changed" from="Pause_Menu/Music_Slider" to="." method="_on_Music_Slider_value_changed"]
+[connection signal="value_changed" from="Pause_Menu/FX_Slider" to="." method="_on_FX_Slider_value_changed"]

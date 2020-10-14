@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/Cenas/Creditos/Creditos.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/UI/Play.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Buttons/Arrow-r.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/Buttons/Arrow-l.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sons/Selection.wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+extra_spacing_char = 5
+font_data = ExtResource( 2 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 72, 0, 24, 14 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 96, 14, 24, 13 )
+
+[node name="Créditos" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1000.0, 77.3636 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 270.0, 442.2, 99.0, 79.3866, 461.98 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 540.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="RichTextLabel" parent="."]
+margin_left = 30.0
+margin_top = 180.0
+margin_right = 510.0
+margin_bottom = 940.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "TESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTE STETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTETESTE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Titulo" type="Label" parent="."]
+anchor_left = -2.8257e-08
+anchor_top = -3.53213e-09
+margin_left = 99.0
+margin_top = 20.0
+margin_right = 528.0
+margin_bottom = 163.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_fonts/font = SubResource( 2 )
+text = "agradecimientos especiales"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+max_lines_visible = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="out" type="TouchScreenButton" parent="."]
+position = Vector2( 210, 970 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 3 )
+pressed = SubResource( 4 )
+
+[node name="more" type="TouchScreenButton" parent="."]
+position = Vector2( 447.2, 52 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 5 )
+
+[node name="less" type="TouchScreenButton" parent="."]
+position = Vector2( 62.1798, 52 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 6 )
+
+[node name="Click_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "Shot Sound"
+[connection signal="pressed" from="out" to="." method="_on_out_pressed"]
+[connection signal="pressed" from="more" to="." method="_on_more_pressed"]
+[connection signal="pressed" from="less" to="." method="_on_less_pressed"]

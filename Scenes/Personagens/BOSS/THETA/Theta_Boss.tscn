@@ -1,0 +1,395 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://Scenes/Personagens/BOSS/THETA/NaveTheta.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Personagens/BOSS/THETA/Tetha_Spikes_R.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Personagens/BOSS/THETA/Tetha_Spikes_L.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Personagens/BOSS/THETA/Theta_Boss.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Personagens/Boss/THETA/Theta_HUD.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "L1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 469 ), Vector2( -65, 469 ), Vector2( -65, 469 ), Vector2( 85, 469 ), Vector2( 85, 469 ), Vector2( -94, 469 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "L2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 669 ), Vector2( -65, 669 ), Vector2( -65, 669 ), Vector2( 85, 669 ), Vector2( 85, 669 ), Vector2( -94, 669 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "L3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 869 ), Vector2( -65, 869 ), Vector2( -65, 869 ), Vector2( 85, 869 ), Vector2( 85, 869 ), Vector2( -94, 869 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "R1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 469 ), Vector2( 606, 469 ), Vector2( 606, 469 ), Vector2( 457, 469 ), Vector2( 457, 469 ), Vector2( 635, 469 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "R2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 669 ), Vector2( 606, 669 ), Vector2( 606, 669 ), Vector2( 457, 669 ), Vector2( 457, 669 ), Vector2( 635, 669 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "R3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 869 ), Vector2( 606, 869 ), Vector2( 606, 869 ), Vector2( 457, 869 ), Vector2( 457, 869 ), Vector2( 635, 869 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "L1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 469 ), Vector2( -65, 469 ), Vector2( -65, 469 ), Vector2( 85, 469 ), Vector2( 85, 469 ), Vector2( -94, 469 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "L2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 669 ), Vector2( -65, 669 ), Vector2( -65, 669 ), Vector2( 85, 669 ), Vector2( 85, 669 ), Vector2( -94, 669 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "L3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 869 ), Vector2( -65, 869 ), Vector2( -65, 869 ), Vector2( 85, 869 ), Vector2( 85, 869 ), Vector2( -94, 869 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "R1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 469 ), Vector2( 606, 469 ), Vector2( 606, 469 ), Vector2( 457, 469 ), Vector2( 457, 469 ), Vector2( 635, 469 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "R2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 669 ), Vector2( 606, 669 ), Vector2( 606, 669 ), Vector2( 457, 669 ), Vector2( 457, 669 ), Vector2( 635, 669 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "R3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 869 ), Vector2( 606, 869 ), Vector2( 606, 869 ), Vector2( 457, 869 ), Vector2( 457, 869 ), Vector2( 635, 869 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "L1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 469 ), Vector2( -65, 469 ), Vector2( -65, 469 ), Vector2( 85, 469 ), Vector2( 85, 469 ), Vector2( -94, 469 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "L2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 669 ), Vector2( -65, 669 ), Vector2( -65, 669 ), Vector2( 85, 669 ), Vector2( 85, 669 ), Vector2( -94, 669 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "L3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_L3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -94, 869 ), Vector2( -65, 869 ), Vector2( -65, 869 ), Vector2( 85, 869 ), Vector2( 85, 869 ), Vector2( -94, 869 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "R1_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 469 ), Vector2( 606, 469 ), Vector2( 606, 469 ), Vector2( 457, 469 ), Vector2( 457, 469 ), Vector2( 635, 469 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "R2_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 669 ), Vector2( 606, 669 ), Vector2( 606, 669 ), Vector2( 457, 669 ), Vector2( 457, 669 ), Vector2( 635, 669 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "R3_Atk"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tetha_Spikes_R3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 3.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 635, 869 ), Vector2( 606, 869 ), Vector2( 606, 869 ), Vector2( 457, 869 ), Vector2( 457, 869 ), Vector2( 635, 869 ) ]
+}
+
+[sub_resource type="Curve2D" id=19]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -2, 268, 0, 0, 0, 0, 270.18, 447.524, 0, 0, 0, 0, 539, 268 )
+}
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 5 )
+region = Rect2( 2, 0, 96, 12 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 5 )
+region = Rect2( 2, 12, 96, 12 )
+
+[node name="Theta_Boss" type="Node2D"]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 482.323 ],
+"_edit_vertical_guides_": [ 270.0 ]
+}
+
+[node name="Anim1" type="AnimationPlayer" parent="."]
+anims/L1_Atk = SubResource( 1 )
+anims/L2_Atk = SubResource( 2 )
+anims/L3_Atk = SubResource( 3 )
+anims/R1_Atk = SubResource( 4 )
+anims/R2_Atk = SubResource( 5 )
+anims/R3_Atk = SubResource( 6 )
+
+[node name="Anim2" type="AnimationPlayer" parent="."]
+anims/L1_Atk = SubResource( 7 )
+anims/L2_Atk = SubResource( 8 )
+anims/L3_Atk = SubResource( 9 )
+anims/R1_Atk = SubResource( 10 )
+anims/R2_Atk = SubResource( 11 )
+anims/R3_Atk = SubResource( 12 )
+
+[node name="Anim3" type="AnimationPlayer" parent="."]
+anims/L1_Atk = SubResource( 13 )
+anims/L2_Atk = SubResource( 14 )
+anims/L3_Atk = SubResource( 15 )
+anims/R1_Atk = SubResource( 16 )
+anims/R2_Atk = SubResource( 17 )
+anims/R3_Atk = SubResource( 18 )
+
+[node name="Nave2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( -2, 0 )
+
+[node name="Tetha_Spikes_R1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 635, 469 )
+
+[node name="Tetha_Spikes_L1" parent="." instance=ExtResource( 3 )]
+position = Vector2( -94, 469 )
+
+[node name="Tetha_Spikes_R2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 635, 669 )
+
+[node name="Tetha_Spikes_L2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -94, 669 )
+
+[node name="Tetha_Spikes_R3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 635, 869 )
+
+[node name="Tetha_Spikes_L3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -94, 869 )
+
+[node name="Boom_pos" type="Position2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="End_Timer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="LifeSpawn" type="Path2D" parent="."]
+position = Vector2( 92.3123, 64.4154 )
+scale = Vector2( 0.656192, 0.323077 )
+curve = SubResource( 19 )
+
+[node name="SpawnPoint" type="PathFollow2D" parent="LifeSpawn"]
+position = Vector2( -2, 268 )
+rotation = 0.583085
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="TextureProgress" type="TextureProgress" parent="Canvas"]
+margin_left = 30.0
+margin_top = 190.0
+margin_right = 126.0
+margin_bottom = 252.0
+rect_scale = Vector2( 5, 5 )
+value = 50.0
+texture_under = SubResource( 20 )
+texture_progress = SubResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="notify_collision" from="Nave2D" to="." method="_on_Nave2D_notify_collision"]
+[connection signal="notify_recharge" from="Nave2D" to="." method="_on_Nave2D_notify_recharge"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="End_Timer" to="." method="_on_End_Timer_timeout"]

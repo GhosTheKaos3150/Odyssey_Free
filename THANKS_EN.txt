@@ -1,0 +1,24 @@
+CAST
+
+Main Developer: Uriel "Ghost" Anderson
+
+LOCALIZATION:
++ PT and EN: Uriel "Ghost" Anderson
++ ES: María Luz R (@mlrtranslator)
+
+-
+
+SPECIAL THANKS!
+
+Since I did the game by my own, I would like to thanks everyone that helped me in this journey and supported my project!
+
+VOLUNTARY LOCALIZATION:
++ ES: María Luz R (@mlrtranslator)
+
+VOLUNTARY TESTING:
+
++ Ricardo "ricxiee" Silva
++ Leonardo "leofrio" Gaspar
++ João "Jão" Pedro Mendes
++ Gabriel "Gabs" Pedro Jehnen
++ Stone Maia

@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Cenas/Main Scene.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Cenas/GUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Cenario/BG Sigma Zones.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Personagens/Player/Player.tscn" type="PackedScene" id=4]
+
+
+[sub_resource type="Animation" id=1]
+resource_name = "Background"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../BackgroundA:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -960 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackgroundB:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 960 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -6.23964, 3e+007, 0, 0, 0, 0, 576.68, 1e+007 )
+}
+
+[node name="Main Scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ -130.0, 0.0 ]
+}
+
+[node name="GUI" parent="." instance=ExtResource( 2 )]
+
+[node name="BackgroundB" type="TextureRect" parent="."]
+margin_top = 960.0
+margin_right = 540.0
+margin_bottom = 1920.17
+mouse_filter = 2
+texture = ExtResource( 3 )
+expand = true
+
+[node name="BackgroundA" type="TextureRect" parent="."]
+editor/display_folded = true
+margin_right = 540.0
+margin_bottom = 960.0
+mouse_filter = 2
+texture = ExtResource( 3 )
+expand = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BackgroundA"]
+autoplay = "Background"
+playback_speed = -1.0
+anims/Background = SubResource( 1 )
+
+[node name="MobSpawn" type="Path2D" parent="."]
+editor/display_folded = true
+position = Vector2( 5.78022, 30 )
+scale = Vector2( 0.926371, 5.25e-013 )
+curve = SubResource( 2 )
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobSpawn"]
+position = Vector2( -6.23964, 3e+007 )
+rotation = -1.57074
+
+[node name="SpawnTimer" type="Timer" parent="MobSpawn"]
+wait_time = 3.0
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 270, 840 )
+priority = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 100.0
+margin_right = 150.0
+margin_bottom = 120.0
+text = "DEBUG V0.1 Odyssey"
+[connection signal="end_game" from="." to="." method="_on_Main_Scene_end_game"]
+[connection signal="start_game" from="." to="." method="_on_Main_Scene_start_game"]
+[connection signal="timeout" from="MobSpawn/SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
+[connection signal="debug" from="Player" to="." method="_on_Player_debug"]
+[connection signal="life_changed" from="Player" to="." method="_on_Player_life_changed"]
+[connection signal="sendto_add" from="Player" to="." method="_on_Player_sendto_add"]

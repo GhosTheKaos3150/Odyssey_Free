@@ -1,0 +1,35 @@
+keys,pt,en,es
+_quit,Sair,Quit,Salir
+_paused,Pausa,Pause,Pausa
+_reload,Voltar,Back,Volver
+_restart,Reiniciar,Restart,Reiniciar
+_confirmation_dialog,Você tem certeza?,Are you sure?,¿Estás seguro?
+_game_over,Fim de Jogo,Game Over,Juego terminado
+_copyright,Créditos,Copyright,Derechos de autor
+_thx,Agradecimentos,Special Thanks,Agradecimientos especiales
+_changelog,Histórico,Changelog,Informe de cambios
+_option,Opções,Options,Opciones
+_t_first,Arraste a nave para movê-la na tela,Drag the ship for moving it,Arrastra la nave para moverla
+_t_second,Arraste a nave para coletar itens,Drag to a item for collecting it,Arrástrala hacia un ítem para recogerlo
+_t_third,Toque na nave para atirar,Touch the ship for shooting,Toca la nave para disparar
+_tutorial,Tutorial,Tutorial,Tutorial
+_popup_laser,ARMA: LASER!,WEAPON: LASER!,ARMA: ¡LÁSER!
+_popup_bullet,ARMA: BALA!,WEAPON: BULLET!,ARMA: ¡BALA!
+_popup_triple,MODIFICADOR: TRIO!,MODIFIER: TRIPLE!,MODIF.: ¡TRIPLE!
+_popup_quad,MODIFICADOR: QUAD!,MODIFIER: QUAD!,MODIF.: ¡CUÁDRUPLE!
+_popup_mega,MODIFICADOR: MEGA!,MODIFIER: MEGA!,MODIF.: ¡MEGA!
+_popup_shield,AUXILIAR: ESCUDO!,SUPPORT: SHIELD!,APOYO: ¡ESCUDO!
+_popup_life,VIDA EXTRA,EXTRA LIFE,VIDA EXTRA
+_popup_life+,VIDA AUMENTADA,LIFE UP!,¡+ VIDA!
+_popup_atk+,ATAQUE AUMENTADO,ATTACK UP!,¡+ ATAQUE!
+_popup_laser_msg,"Tiros a Laser são muito uteis, pois eles atravessam inimigos mais fracos! Mas cuidado: Laser são tiros de longa distância!","Laser shots are useful, once they pass through weak enemies! But be careful: Lasers are long-range shots and will not work on a short-range!",¡Los disparos láser sirven para atravesar enemigos débiles! Ten cuidado: ¡los láseres son de largo alcance y no funcionan si los enemigos están muy cerca!
+_popup_bullet_msg,"Tiros de Bala são os tiros convencionais! São básicos, mas podem ser muito versáteis!","Bullet shots are the most common through the galaxy! Basic, but very versatile!","Los disparos de bala son los más comunes en toda la galaxia. Básicos, ¡pero muy versátiles!"
+_popup_triple_msg,"Esse modificador de canhão modifica os tiros, dissipando a energia em três ondas! Mas cuidado, ele diminui o tempo de vida do tiro!","This cannon modifier spreads the energy, transforming it into three shots! This modifier lowers the shot lifespan.","¡Este modif. de cañón esparce energía y la convierte en tres disparos! Sin embargo, disminuye la duración de los proyectiles."
+_popup_quad_msg,"Esse modificador de canhão modifica os tiros, dissipando a energia em três ondas! Mas cuidado, ele diminui o tempo de vida do tiro!","This cannon modifier spreads the energy, transforming it into four shots! This modifier lowers the shot lifespan.","¡Este modif. de cañón esparce energía y la convierte en cuatro disparos! Sin embargo, disminuye la duración de los proyectiles."
+_popup_mega_msg,"Esse modificador de canhão modifica os tiros, ampliando seu tamanho e potência, causando um ataque mais forte e de maior area!","This cannon modifier amplifies the energy, creating a bigger and more powerful shot!",¡Este modif. de cañón amplifica energía para crear un disparo más grande y poderoso!
+_popup_shield_msg,O escudo é uma ótima ferramenta para se proteger de ataques indesejados! Eles protegem um dano.,The shield will protect you from unwanted enemy shots! It will protect you from one damage.,¡Este escudo te protegerá de los molestos disparos enemigos! Vale por un punto de daño.
+_popup_life_msg,Ao longo do tempo você pode perder vida! Pegue essas capsulas para recuperá-las!,"This life capsule charges the forcefield of your ship, increasing your life by one point!",¡Con esta cápsula de vida cargas el campo de fuerza de tu nave y ganas un punto de vida!
+_popup_life+_msg,"Essas capsulas de vida especiais aumentam permanentemente sua vida durante a rodada! Mas cuidado, se você morrer você perderá essa vantagem!",This special life capsule increases your life energy permanently by one point. It will be lost if you die.,Con esta cápsula de vida ganas vitalidad de forma permanente. Se perderá si mueres.
+_popup_atk+_msg,"Essa capsula especial amplifica o ataque do seu canhão em 1 ATK. Mas cuidado, se você morrer você perderá essa vantagem!",This capsule increases your attack permanently by one point. It will be lost if you die.,Con esta cápsula especial ganas un punto de ataque de forma permanente. Se perderá si mueres.
+_music_l,Musica,Music,Música
+_sound_l,Sons,Sound,Sonido

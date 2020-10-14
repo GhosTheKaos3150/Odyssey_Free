@@ -1,0 +1,32 @@
+Histórico de Versões
+
+	Odyssey V1.1.0:
+		+ Novo Inimigo: Jet!
+		+ Nova Capsula: Bomb Shot!
+			+ Novo tutorial para essa arma.
+		+ Novos Achievements!
+			+ "Fomos Longe Demais!"
+			+ "Velocidade da Luz!"
+			+ "Indo pelos ares"
+			+ "Acidentes Acontecem :)"
+		+ Melhoria das Localizações!
+		
+
+	Odyssey Versão 0.8.0:
+		+ Instroudução de dois novos inimigos! Spinner e Barrier entram para a diversão!
+		+ Melhora na localização: Novos textos estão traduzidos no jogo.
+		+ Introduzindo Musicas ao jogo! Telas de Pausa e Fim de Jogo agora estão mais agradáveis!
+		+ Introdução ao Google Play Game Services! Alguns recursos como Placar e Login estão disponíveis (acho).
+
+	Odyssey Versão 0.7.4:
+		+ Lançamento da localização PT-BR e EN! 
+		+ Correção de bugs relacionados ás capsulas (tiros e vida).
+		+ Correção de bugs de jogabilidade. Agora é impossível gerar múltiplos itens ao acertar um inimigo várias vezes após morto.
+		+ Correção de bugs relacionados aos Ads.
+		+ PATCH: Corrigido Tela de Copyright.
+
+	Odyssey Vesão 0.7.3
+		+ Dificuldade do chefe regulada.
+		+ Correção de bugs relacionados ao chefe.
+		+ Bugs de colisão (com tiros e naves) foram corrigidos.
+		+ Bugs relacionados aos ADs foram corrigidos.

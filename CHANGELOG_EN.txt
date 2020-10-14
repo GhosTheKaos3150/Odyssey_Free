@@ -1,0 +1,68 @@
+CHANGELOG:
+
+	Odyssey V1.1.0:
+		+ New Enemy: Jet!
+		+ New Capsule: Bomb Shot!
+			+ And also a new weapon tutorial!
+		+ New Achievements!
+			+ "We are going too far!"
+			+ "Light Speed!"
+			+ "Bombs in the air"
+			+ "IT WAS AN ACIDENT!"
+		+ Localization updated!
+		
+
+	ODYSSEY V1.0.0:
+		+ New Tutorials for the game!
+		+ Localization updated.
+		+ Imense Bug-Fixing.
+			+ Fixed Barrier Related Bugs
+			+ "Shield Capsule Doesn't Spawn" bug fixed.
+			+ Bullet Capsules now reverse Laser
+			+ Collision bugs fixed.
+			+ Theta Boss bugs fixed.
+			+ Minor bugs fixed.
+
+	ODYSSEY V0.9.0:
+		+ Added the Mega Capsule
+		+ Added the Shield Capsule
+		+ Added Life+ and ATK+ Capsules
+		+ Introducing the Theta Ship Boss!
+		+ Localization: Added ES Localization by María Luz R (@mlrtranslator)
+		+ New Achievements:
+			+ "Impossible"
+			+ "Bullet Hell"
+			+ New Hidden Acheievements available!
+		+ Bug Correction
+
+	ODYSSEY V0.8.0:
+		+ Introducing the Spinner Enemy! Watch out for him after 100 points!
+		+ Introducing the Barrier Enemy, your not-so-friendly friend! (Not a friend, tho)
+		+ Improvement on the Localization. Now it supports more texts.
+		+ Introducing musics for the game! Pause and Game Over menu are now confortable!
+		+ Introducing Google Play Game Services! Leaderboard and Sign in are now (kinda) available.
+
+	ODYSSEY V0.7.4:
+		+ Released PT-BR and EN-US localization!
+		+ Capsule Missclick Bug corrected.
+		+ Playability bug corrected. Now it's impossible to farm capsules form a dead ship.
+		+ Ad-related bugs corrected
+		+ PATCH 1: Copyright working fine now.
+		+ PATCH 2: ADs are working fine now.
+		
+	ODYSSEY V0.7.3:
+		+ Corrected AD related bugs.
+	
+	ODYSSEY V0.7.2:
+		+ Life Spawn added during the Boss Hipercannon recharge.
+		+ Paused Boss bullets bug are now corrected.
+		+ Bullet's collision is disabled first. It may correct some bugs.
+
+	ODYSSEY V0.6:
+		+ Beta Launch! )o)
+		+ Added everything
+			- Enemies 1 and 2
+			- SIGMA Boss
+			- Two tipes of Shots (Bullet and Laser)
+			- Three modifiers (Triple, Quad and Single). Works on Bullets, only.
+			- AND MUTCH MORE!

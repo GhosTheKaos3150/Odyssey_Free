@@ -1,0 +1,115 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scenes/Cenas/Confirmation_Dialog.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/Frame_Message.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/UI/Square_Button.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sons/Selection.wav" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Sons/Popup.wav" type="AudioStream" id=9]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 14, 15 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 4 )
+region = Rect2( 14, 0, 14, 15 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 15, 14, 15 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 14, 16, 14, 14 )
+
+[sub_resource type="Animation" id=5]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.001, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 680 ), Vector2( 0, 680 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="Confirmation_Dialog" type="Popup"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -270.0
+margin_top = -540.0
+margin_right = 270.0
+margin_bottom = 540.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 540.0, 510.0, 585.0 ],
+"_edit_vertical_guides_": [ 270.0, 150.0, 390.0 ]
+}
+
+[node name="Sprite" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -229.0
+margin_top = -245.0
+margin_right = -136.0
+margin_bottom = -171.0
+rect_scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+patch_margin_left = 14
+patch_margin_top = 14
+patch_margin_right = 14
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Accept" type="TouchScreenButton" parent="."]
+position = Vector2( 160, 510 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 1 )
+pressed = SubResource( 2 )
+
+[node name="Deny" type="TouchScreenButton" parent="."]
+position = Vector2( 310, 510 )
+scale = Vector2( 5, 5 )
+normal = SubResource( 3 )
+pressed = SubResource( 4 )
+
+[node name="Sound_SELECTION" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+
+[node name="Sound_POPUP" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+bus = "Shot Sound"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Show = SubResource( 5 )
+
+[node name="Message" type="Label" parent="."]
+margin_left = 101.236
+margin_top = 402.0
+margin_right = 441.236
+margin_bottom = 457.0
+custom_fonts/font = SubResource( 6 )
+text = "Você tem certeza?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="about_to_show" from="." to="." method="_on_Confirmation_Dialog_about_to_show"]
+[connection signal="pressed" from="Accept" to="." method="_on_Accept_pressed"]
+[connection signal="pressed" from="Deny" to="." method="_on_Deny_pressed"]

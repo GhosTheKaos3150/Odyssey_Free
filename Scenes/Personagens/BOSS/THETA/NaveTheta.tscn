@@ -1,0 +1,198 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Personagens/Boss/THETA/Theta_Ship.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Personagens/BOSS/THETA/NaveTheta.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sons/Hit_Hurt.wav" type="AudioStream" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Boss"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 228 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SIDE_A1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 64, 108 ), Vector2( 64, 338 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SIDE_B1:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 112, 116 ), Vector2( 112, 346 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SIDE_B2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 448, 116 ), Vector2( 448, 346 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("SIDE_A2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 496, 108 ), Vector2( 496, 338 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("FRONT_A1:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 144, 100 ), Vector2( 144, 330 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("FRONT_B1:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 238, 165 ), Vector2( 238, 395 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("FRONT_B2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 323, 165 ), Vector2( 323, 395 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("FRONT_A2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 416, 100 ), Vector2( 416, 330 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 112, 36 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ), null, SubResource( 2 ), null, SubResource( 2 ), null ],
+"loop": true,
+"name": "damage",
+"speed": 10.0
+} ]
+
+[node name="Nave2D" type="Area2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Boss = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 272, 90 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 3 )
+animation = "idle"
+playing = true
+
+[node name="recharge_time" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="side_timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="front_timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="SIDE_A1" type="Position2D" parent="."]
+position = Vector2( 64, 338 )
+
+[node name="SIDE_B1" type="Position2D" parent="."]
+position = Vector2( 112, 346 )
+
+[node name="SIDE_B2" type="Position2D" parent="."]
+position = Vector2( 448, 346 )
+
+[node name="SIDE_A2" type="Position2D" parent="."]
+position = Vector2( 496, 338 )
+
+[node name="FRONT_A1" type="Position2D" parent="."]
+position = Vector2( 144, 330 )
+
+[node name="FRONT_B1" type="Position2D" parent="."]
+position = Vector2( 238, 395 )
+
+[node name="FRONT_B2" type="Position2D" parent="."]
+position = Vector2( 323, 395 )
+
+[node name="FRONT_A2" type="Position2D" parent="."]
+position = Vector2( 416, 330 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 273, 76 )
+polygon = PoolVector2Array( -273, -50, -273, 14, -177, 14, -177, -10, -145, -42, -137, -42, -137, 14, -113, 14, -49, 54, 47, 54, 111, 14, 135, 14, 135, -42, 143, -42, 175, -10, 175, 14, 279, 14, 279, -50 )
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Shot Sound"
+[connection signal="area_entered" from="." to="." method="_on_Nave2D_area_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="timeout" from="recharge_time" to="." method="_on_recharge"]
+[connection signal="timeout" from="side_timer" to="." method="_shot_side"]
+[connection signal="timeout" from="front_timer" to="." method="_shot_front"]
