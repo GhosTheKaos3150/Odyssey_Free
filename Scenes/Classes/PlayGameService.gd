@@ -1,14 +1,12 @@
 extends Node
 
-var play_game_service
+var pgs
 var pgs_init: bool
 var show_popups: bool
-var enable_save_games: bool
 var Acount_Connected: String
 
 func _ready():
 	show_popups = true
-	enable_save_games = false
 	pgs_init = false
 	Acount_Connected = ""
 
@@ -57,24 +55,23 @@ func _on_player_is_already_connected(is_connected: bool):
 	else:
 		print ("Player connecting...")
 
-func _on_game_saved_success():
-	print("Saving game file succeded")
-
-func _on_game_saved_fail():
-	print("Saving game file failled")
-
-func _on_game_load_success(data):
-	var game_data = parse_json(data)
-	GlobalVals.first_time = game_data["first_time"]
-	
-
-func _on_game_load_fail():
-	print ("Loading game file failled")
-
 #Connection
 func _connect_services():
-	if Engine.has_singleton("PlayGameServices") and not pgs_init:
-		play_game_service = Engine.get_singleton("PlayGameServices")
-		
-		play_game_service.init(get_instance_id(), show_popups, enable_save_games)
+	pgs = Engine.get_singleton("GodotPlayGamesServices")
+	
+	if pgs != null:
+		pgs.init(show_popups)
 		pgs_init = true
+		
+		pgs.connect("_on_sign_in_success", self, "_on_sign_in_success") # account_id: String
+		pgs.connect("_on_sign_in_failed", self, "_on_sign_in_failed") # error_code: int
+		pgs.connect("_on_sign_out_success", self, "_on_sign_out_success") # no params
+		pgs.connect("_on_sign_out_failed", self, "_on_sign_out_failed") # no params
+		pgs.connect("_on_achievement_unlocked", self, "_on_achievement_unlocked") # achievement: String
+		pgs.connect("_on_achievement_unlocking_failed", self, "_on_achievement_unlocking_failed") # achievement: String
+		pgs.connect("_on_achievement_revealed", self, "_on_achievement_revealed") # achievement: String
+		pgs.connect("_on_achievement_revealing_failed", self, "_on_achievement_revealing_failed") # achievement: String
+		pgs.connect("_on_achievement_incremented", self, "_on_achievement_incremented") # achievement: String
+		pgs.connect("_on_achievement_incrementing_failed", self, "_on_achievement_incrementing_failed") # achievement: String
+		pgs.connect("_on_leaderboard_score_submitted", self, "_on_leaderboard_score_submitted") # leaderboard_id: String
+		pgs.connect("_on_leaderboard_score_submitting_failed", self, "_on_leaderboard_score_submitting_failed") # leaderboard_id: String

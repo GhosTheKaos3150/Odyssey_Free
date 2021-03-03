@@ -1,19 +1,45 @@
 Histórico de Versões
 
 	Odyssey V1.1.0:
-		+ Novo Inimigo: Jet!
-		+ Nova Capsula: Bomb Shot!
-			+ Novo tutorial para essa arma.
+			+ Novo inimigo: Jet!
+			+ Você encontra eles com 150/125/115 pontos (Para cada nivel de dificuldade)
+			+ Eles aparecem aleaóriamente nos níveis Normal e Dificil!
+		+ Introduzindo Dificuldades de Jogo!
+			+ No menu principal, você poderá escolher a dificuldade do jogo antes de cada partida (Fácil, Normal e Dificil)!
 		+ Novos Achievements!
-			+ "Fomos Longe Demais!"
-			+ "Velocidade da Luz!"
-			+ "Indo pelos ares"
-			+ "Acidentes Acontecem :)"
-		+ Melhoria das Localizações!
+			+ "Ai!"
+			+ "Muito Rápido!"
+			+ "Velocidade da Luz?"
+			+ "Volte para seu mundo!"
+		+ Melhorias na Localização!
+		
+
+	ODYSSEY V1.0.0:
+		+ Adicionado Tutorial!
+		+ Melhoras na Localização.
+		+ Grande Bug-Fixing.
+			+ Corrigido bugs do Barrier
+			+ Bug de "Capsula de escudo não spawna" corrigido.
+			+ Capsulas de Tiro agora substituem tiros de lazer!
+			+ Bugs de colisão corrigidos.
+			+ Bugs do Theta Boss corrigidos.
+			+ Bugs menores corrigidos.
+
+	ODYSSEY V0.9.0:
+		+ Adicionado Mega Capsula
+		+ Adicionado Capsula Escudo
+		+ Adicionado Capsulas de Vida+ e ATK+
+		+ Introduzindo o Boss Nave Theta!
+		+ Localização: Adicionado Localização em ES por María Luz R (@mlrtranslator)
+		+ Novos Achievements:
+			+ "Impossível"
+			+ "Inferno de Tiros"
+			+ Novos achievements escondidos!
+		+ Correção de Bugs
 		
 
 	Odyssey Versão 0.8.0:
-		+ Instroudução de dois novos inimigos! Spinner e Barrier entram para a diversão!
+		+ Instrodução de dois novos inimigos! Spinner e Barrier entram para a diversão!
 		+ Melhora na localização: Novos textos estão traduzidos no jogo.
 		+ Introduzindo Musicas ao jogo! Telas de Pausa e Fim de Jogo agora estão mais agradáveis!
 		+ Introdução ao Google Play Game Services! Alguns recursos como Placar e Login estão disponíveis (acho).

@@ -8,10 +8,10 @@ var kill_anim = false
 
 func _ready():
 	
-	if GlobalVals.dificuldade == "e":
+	if Global.dificuldade == "e":
 		speed = 80
 		
-	elif GlobalVals.dificuldade == "n":
+	elif Global.dificuldade == "n":
 		speed = 100
 		
 	else:
@@ -32,8 +32,8 @@ func _ready():
 	
 
 func _process(delta):
-	if $Sound_DEATH.volume_db != GlobalVals.db_fx_value:
-		$Sound_DEATH.volume_db = GlobalVals.db_fx_value
+	if $Sound_DEATH.volume_db != Global.db_fx_value:
+		$Sound_DEATH.volume_db = Global.db_fx_value
 	
 #	#TEST ONLY
 #	if position.y >= 512:

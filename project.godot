@@ -9,10 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node",
-"class": "Admob",
+"base": "HBoxContainer",
+"class": "ContributorClass",
 "language": "GDScript",
-"path": "res://admob-lib/admob.gd"
+"path": "res://addons/github-integration/scripts/ContributorClass.gd"
+}, {
+"base": "PanelContainer",
+"class": "GistItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/GistItem.gd"
+}, {
+"base": "HBoxContainer",
+"class": "InvitationItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/InvitationItem.gd"
+}, {
+"base": "PanelContainer",
+"class": "RepositoryItem",
+"language": "GDScript",
+"path": "res://addons/github-integration/scripts/RepositoryItem.gd"
 }, {
 "base": "Node2D",
 "class": "Ship",
@@ -30,29 +45,29 @@ _global_script_classes=[ {
 "path": "res://Scenes/Classes/Tank.gd"
 } ]
 _global_script_class_icons={
-"Admob": "res://admob-lib/icon.png",
+"ContributorClass": "",
+"GistItem": "",
+"InvitationItem": "",
+"RepositoryItem": "",
 "Ship": "",
 "Shot": "",
 "Tank": ""
 }
 
-[android]
-
-modules="org/godotengine/godot/GodotAdMob,org/godotengine/godot/PlayGameServices"
-
 [application]
 
-config/name="Odyssey Lite"
+config/name="Odyssey"
 run/main_scene="res://Scenes/Cenas/Menu.tscn"
 boot_splash/image="res://icon_xtudio.png"
 boot_splash/use_filter=false
-boot_splash/bg_color=Color( 0.152941, 0.0509804, 0.278431, 1 )
+boot_splash/bg_color=Color( 0.941176, 0.941176, 0.941176, 1 )
 config/icon="res://Assets/launcher_icon/launcher_xxxhdpi.png"
 
 [autoload]
 
-Global="*res://Scenes/Classes/PlayGameService.gd"
-GlobalVals="*res://Scenes/Classes/Global.gd"
+PGS="*res://Scenes/Classes/PlayGameService.gd"
+Global="*res://Scenes/Classes/Global.gd"
+InAppReview="*res://Scenes/Classes/InAppReview.gd"
 
 [display]
 

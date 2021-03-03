@@ -14,8 +14,8 @@ var paused
 func _ready():
 	pontuation = 0
 	
-	$Pause_Menu/FX_Slider.value = GlobalVals.db_fx_value
-	$Pause_Menu/Music_Slider.value = GlobalVals.db_fx_value
+	$Pause_Menu/FX_Slider.value = Global.db_fx_value
+	$Pause_Menu/Music_Slider.value = Global.db_fx_value
 	
 	connect("quit", get_parent(), "_on_QuitGame")
 	
@@ -30,11 +30,11 @@ func _ready():
 
 func _process(delta):
 	
-	if $Sound_Music.volume_db != GlobalVals.db_music_value:
-		$Sound_Music.volume_db = GlobalVals.db_music_value
+	if $Sound_Music.volume_db != Global.db_music_value:
+		$Sound_Music.volume_db = Global.db_music_value
 	
-	if $Sound_SELECTION.volume_db != GlobalVals.db_fx_value:
-		$Sound_SELECTION.volume_db = GlobalVals.db_fx_value
+	if $Sound_SELECTION.volume_db != Global.db_fx_value:
+		$Sound_SELECTION.volume_db = Global.db_fx_value
 
 func _reload_life(life):
 	$LifeBar.value = life
@@ -51,6 +51,8 @@ func _on_Main_Scene_end_game():
 	$Label.hide()
 	$LifeBar.hide()
 	$RechargeBar.hide()
+	$WIndicator.hide()
+	
 	pontuation = 0
 
 func _on_Main_Scene_start_game():
@@ -59,6 +61,7 @@ func _on_Main_Scene_start_game():
 	$Label.show()
 	$LifeBar.show()
 	$RechargeBar.show()
+	$WIndicator.show()
 	
 	$Label.text = str(0)
 
@@ -87,7 +90,7 @@ func _on_Reload_pressed():
 	emit_signal("notify_reload")
 
 func _on_Music_Slider_value_changed(value):
-	GlobalVals.db_music_value = value
+	Global.db_music_value = value
 
 func _on_FX_Slider_value_changed(value):
-	GlobalVals.db_fx_value = value
+	Global.db_fx_value = value

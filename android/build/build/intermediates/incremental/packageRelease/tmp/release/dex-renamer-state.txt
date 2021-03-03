@@ -1,0 +1,4 @@
+#Tue Mar 02 22:52:51 GFT 2021
+base.0=D\:\\Uriel Arquivos\\Arquivos de Trabalho\\[1]Ghost_the_Kaos\\3 - Jogos\\[2] SideProjects\\[0] An Outer-Space Odyssey\\Odyssey_Free\\android\\build\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

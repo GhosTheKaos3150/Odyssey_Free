@@ -1,11 +1,13 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scenes/Cenas/GUI.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Personagens/Player/HUD/LifeBar.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Personagens/Player/HUD/TimeBar.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/Play.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Objetos/Capsulas/Capsules_sheet.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Musica/Wait.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/UI/Buttons/Menu's1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Objetos/Capsulas/capsules_atlas.tres" type="Texture" id=8]
 [ext_resource path="res://Assets/Sons/Selection.wav" type="AudioStream" id=12]
 [ext_resource path="res://Assets/Fonts/GnuUnifontFull-Pm9P.ttf" type="DynamicFontData" id=14]
 
@@ -53,10 +55,14 @@ font_data = ExtResource( 14 )
 [sub_resource type="DynamicFont" id=11]
 font_data = ExtResource( 14 )
 
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 128, 32 )
+
 [node name="GUI" type="CanvasLayer"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 164.0, 1056.0, 1000.0, 610.0, 230.0, 1082.0 ],
+"_edit_horizontal_guides_": [ 164.0, 1056.0, 1000.0, 610.0, 230.0, 1082.0, 156.375, 201.758 ],
 "_edit_vertical_guides_": [ 20.0, 520.0, 70.0, 470.0, 374.0, 166.0, 230.0, 318.0 ]
 }
 
@@ -97,10 +103,10 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 122.0
-margin_top = 108.0
-margin_right = 412.0
-margin_bottom = 188.0
+margin_left = 126.476
+margin_top = 41.6883
+margin_right = 416.476
+margin_bottom = 121.688
 custom_fonts/font = SubResource( 5 )
 text = "0"
 align = 1
@@ -112,7 +118,7 @@ __meta__ = {
 }
 
 [node name="Button_Menu" type="TouchScreenButton" parent="."]
-position = Vector2( 20, 132 )
+position = Vector2( 20, 91.8804 )
 scale = Vector2( 4, 4 )
 normal = ExtResource( 7 )
 pressed = ExtResource( 7 )
@@ -125,9 +131,10 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Pause_Menu"]
-margin_top = 230.0
-margin_right = 540.0
-margin_bottom = 1069.0
+margin_left = -0.594604
+margin_top = 230.929
+margin_right = 539.405
+margin_bottom = 1069.92
 color = Color( 0, 0, 0, 0.254902 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -240,6 +247,29 @@ stream = ExtResource( 12 )
 
 [node name="Sound_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+
+[node name="WIndicator" type="HBoxContainer" parent="."]
+margin_left = 246.0
+margin_top = 140.0
+margin_right = 286.0
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainW" type="Sprite" parent="WIndicator"]
+position = Vector2( -19.0665, 26.7474 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="SubW" type="Sprite" parent="WIndicator"]
+position = Vector2( 68.4131, 26.547 )
+scale = Vector2( 3, 3 )
+texture = SubResource( 12 )
+region_enabled = true
+region_rect = Rect2( 112, 16, 16, 16 )
 [connection signal="pressed" from="Button_Menu" to="." method="_on_Menu_pressed"]
 [connection signal="pressed" from="Pause_Menu/Button_Quit" to="." method="_on_Button_Quit_pressed"]
 [connection signal="pressed" from="Pause_Menu/Reload" to="." method="_on_Reload_pressed"]

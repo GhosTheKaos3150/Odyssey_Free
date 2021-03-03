@@ -4,6 +4,9 @@ var db_music_value = -10
 var db_fx_value = -10
 
 var first_time = true
+var times = 0
+var review = false
+var dificuty_check = true
 var dificuldade = "n"
 
 var tuto_capsule = {
@@ -21,7 +24,13 @@ var tuto_capsule = {
 }
 
 func _save():
-	var save_file: Dictionary = { "first_time": first_time, "tutodef": tuto_capsule, "dificuldade": dificuldade}
+	var save_file: Dictionary = { 
+		"first_time": first_time,
+		"times": times, 
+		"tutodef": tuto_capsule, 
+		"dificuldade": dificuldade,
+		"df_check": dificuty_check
+	}
 	
 	var save_game = File.new()
 	
@@ -38,8 +47,10 @@ func _load():
 		
 		var load_data = parse_json(load_game.get_line())
 		first_time = load_data["first_time"]
+		times = load_data["times"]
 		print(load_data["tutodef"])
 		tuto_capsule = load_data["tutodef"]
 		dificuldade = load_data["dificuldade"]
+		dificuty_check = load_data["df_check"]
 		
 		load_game.close()

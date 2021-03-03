@@ -2,13 +2,15 @@ CHANGELOG:
 
 	Odyssey V1.1.0:
 		+ New Enemy: Jet!
-		+ New Capsule: Bomb Shot!
-			+ And also a new weapon tutorial!
+			+ You can find them at 150/125/115 (for each difficulty level)
+			+ They also spawn randomly at Normal and Hard!
+		+ New Game Difficulties!
+			+ On main menu, you can now select a difficulty level (Easy, Normal and Hard)!
 		+ New Achievements!
-			+ "We are going too far!"
-			+ "Light Speed!"
-			+ "Bombs in the air"
-			+ "IT WAS AN ACIDENT!"
+			+ "OUCH!"
+			+ "TOO FAST!"
+			+ "Lightspeed?"
+			+ "Return to your World!"
 		+ Localization updated!
 		
 

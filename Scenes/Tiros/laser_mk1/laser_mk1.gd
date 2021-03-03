@@ -8,8 +8,8 @@ func _ready():
 	speed = 600
 
 func _process(delta):
-	if $Sound_Collision.volume_db !=  GlobalVals.db_fx_value:
-		$Sound_Collision.volume_db = GlobalVals.db_fx_value
+	if $Sound_Collision.volume_db !=  Global.db_fx_value:
+		$Sound_Collision.volume_db = Global.db_fx_value
 
 #Signal Processes
 

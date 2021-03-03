@@ -5,10 +5,10 @@ extends Ship
 func _ready():
 	var random = int(rand_range(1, 100))
 	
-	if GlobalVals.dificuldade == "e":
+	if Global.dificuldade == "e":
 		speed -= speed*0.1
 		
-	elif GlobalVals.dificuldade == "h":
+	elif Global.dificuldade == "h":
 		speed += speed*0.1
 	
 	Shot = load("res://Scenes/Tiros/laser_mk1/laser_mk1.tscn")
@@ -16,14 +16,14 @@ func _ready():
 	$LifeBar.max_value = life
 
 func _process(delta):
-	if $Sound_HIT.volume_db != GlobalVals.db_fx_value:
-		$Sound_HIT.volume_db = GlobalVals.db_fx_value
+	if $Sound_HIT.volume_db != Global.db_fx_value:
+		$Sound_HIT.volume_db = Global.db_fx_value
 	
-	if $Sound_SHOT.volume_db != GlobalVals.db_fx_value:
-		$Sound_SHOT.volume_db = GlobalVals.db_fx_value
+	if $Sound_SHOT.volume_db != Global.db_fx_value:
+		$Sound_SHOT.volume_db = Global.db_fx_value
 	
-	if $Sound_DEATH.volume_db != GlobalVals.db_fx_value:
-		$Sound_DEATH.volume_db = GlobalVals.db_fx_value
+	if $Sound_DEATH.volume_db != Global.db_fx_value:
+		$Sound_DEATH.volume_db = Global.db_fx_value
 
 #Collision Processes
 

@@ -135,7 +135,8 @@ func _on_Nave2D_notify_collision(area):
 	$Canvas/TextureProgress.value = $Nave2D.life
 
 	if $Nave2D.life <= 0:
-		Global.play_game_service.unlock_achievement("CgkIqeCtvvUHEAIQCQ")
+		if PGS.pgs != null and PGS.pgs.isSignedIn():
+			PGS.pgs.unlockAchievement("CgkIqeCtvvUHEAIQCQ")
 		$End_Timer.start()
 
 func _kill():

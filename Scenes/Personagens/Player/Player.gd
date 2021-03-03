@@ -21,10 +21,11 @@ var atk = 1
 
 var delay_time = 0.5
 
-var main = "bullet"
-var weapon = ""
+export var main = "bullet"
+export var weapon = ""
 var shot_speed = 0
 var shotis_able = false
+var shot_hold = false
 
 var dead = true
 var move_enabled = false
@@ -46,22 +47,29 @@ func _process(delta):
 	if Input.is_action_just_pressed("Tests"):
 		create_shield()
 	
-	if $Sound_HIT.volume_db != GlobalVals.db_fx_value:
-		$Sound_HIT.volume_db = GlobalVals.db_fx_value
+#	if shot_hold:
+#		_player_shot()
 	
-	if $Sound_SHOOT.volume_db != GlobalVals.db_fx_value:
-		$Sound_SHOOT.volume_db = GlobalVals.db_fx_value
+	if $Sound_HIT.volume_db != Global.db_fx_value:
+		$Sound_HIT.volume_db = Global.db_fx_value
 	
-	if $Sound_BOOM.volume_db != GlobalVals.db_fx_value:
-		$Sound_BOOM.volume_db = GlobalVals.db_fx_value
+	if $Sound_SHOOT.volume_db != Global.db_fx_value:
+		$Sound_SHOOT.volume_db = Global.db_fx_value
+	
+	if $Sound_BOOM.volume_db != Global.db_fx_value:
+		$Sound_BOOM.volume_db = Global.db_fx_value
+	
 
 func _input(event):
 
-	if not dead and move_enabled:
-		if event is InputEventScreenDrag:
+	if not dead:
+		if event is InputEventScreenDrag and move_enabled:
 			position = event.position
 			position.x = clamp(position.x, 86, 454)
 			position.y = clamp(position.y, 272, 970)
+		
+		if event is InputEventScreenTouch:
+			_player_shot()
 	
 
 #Shot Creation Process
@@ -108,6 +116,10 @@ func _on_Shot_Button_released():
 func _on_Shot_Button_pressed():
 	if not move_enabled:
 		move_enabled = true
+	
+#	_player_shot()
+
+func _player_shot():
 	if shotis_able:
 		
 		$Shot_position.position = position
@@ -169,6 +181,10 @@ func _on_Player_area_entered(area):
 			area.queue_free()
 		elif area.type == "laser":
 			area._disable_collision()
+		
+		if area.type == "Jet":
+			if PGS.pgs != null and PGS.pgs.isSignedIn():
+				PGS.pgs.unlockAchievement("CgkIqeCtvvUHEAIQCg")
 		
 		if life <= 0:
 	#		_restart() #TEST ONLY
@@ -233,12 +249,14 @@ func _on_Main_Scene_start_game():
 func _on_Main_Scene_pause_game(state):
 	if state:
 		$ShotTimer.paused = true
+		$BulletTimer.paused = true
 		shotis_able = false
 		move_enabled = false
 		emit_signal("pause", true)
 		
 	else:
 		$ShotTimer.paused = false
+		$BulletTimer.paused = false
 		shotis_able = true
 		move_enabled = true
 		emit_signal("pause", false)

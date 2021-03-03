@@ -1,43 +1,29 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Cenas/Main Scene.gd" type="Script" id=1]
-[ext_resource path="res://admob-lib/admob.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Cenas/BackgroundA.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Cenas/GUI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Cenario/Backgrounds.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Personagens/Player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Cenas/Game Over.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Musica/Nebula.ogg" type="AudioStream" id=7]
 
-[sub_resource type="Animation" id=1]
-resource_name = "Background"
-length = 5.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("../BackgroundA:rect_position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( 0, -1080 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("../BackgroundB:rect_position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 0, 1080 ), Vector2( 0, 0 ) ]
-}
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+uniform float scroll_speed;
 
-[sub_resource type="Curve2D" id=2]
+void fragment(){
+    vec2 shifteduv = UV;
+    shifteduv .y += TIME * scroll_speed;
+    vec4 color = texture(TEXTURE, shifteduv);
+    COLOR = color;
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/scroll_speed = null
+
+[sub_resource type="Curve2D" id=3]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -6.23964, 3e+07, 0, 0, 0, 0, 576.68, 1e+07 )
 }
@@ -49,40 +35,25 @@ __meta__ = {
 "_edit_vertical_guides_": [ 0.0 ]
 }
 
-[node name="Admob" type="Node" parent="."]
-script = ExtResource( 2 )
-is_real = true
-banner_id = "ca-app-pub-2388328305588315/2563689909"
-
 [node name="GUI" parent="." instance=ExtResource( 3 )]
 
-[node name="BackgroundB" type="TextureRect" parent="."]
-margin_top = 1080.0
-margin_right = 540.0
-margin_bottom = 2160.0
-mouse_filter = 2
-texture = ExtResource( 4 )
-expand = true
-
 [node name="BackgroundA" type="TextureRect" parent="."]
+material = SubResource( 2 )
 margin_right = 540.0
 margin_bottom = 1080.0
 mouse_filter = 2
 texture = ExtResource( 4 )
 expand = true
+stretch_mode = 2
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="BackgroundA"]
-autoplay = "Background"
-playback_speed = -1.0
-anims/Background = SubResource( 1 )
-
 [node name="MobSpawn" type="Path2D" parent="."]
 position = Vector2( 5, 150 )
 scale = Vector2( 0.926371, 5.25e-13 )
-curve = SubResource( 2 )
+curve = SubResource( 3 )
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobSpawn"]
 position = Vector2( -6.23964, 3e+07 )
@@ -98,10 +69,13 @@ priority = 1.0
 [node name="DEBUG" type="Label" parent="."]
 visible = false
 margin_left = 10.0
-margin_top = 140.0
+margin_top = 237.0
 margin_right = 150.0
-margin_bottom = 160.0
+margin_bottom = 257.0
 text = "DEBUG V0.1 Odyssey"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Dialog_Back" type="ColorRect" parent="."]
 visible = false

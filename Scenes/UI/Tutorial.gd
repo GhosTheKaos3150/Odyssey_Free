@@ -12,6 +12,6 @@ func _ready():
 	
 
 func _on_Play_pressed():
-	GlobalVals.first_time = false
-	GlobalVals._save()
+	Global.first_time = false
+	Global._save()
 	get_tree().change_scene("res://Scenes/Cenas/Main Scene.tscn")

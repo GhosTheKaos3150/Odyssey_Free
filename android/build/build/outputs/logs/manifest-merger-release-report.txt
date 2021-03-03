@@ -1,0 +1,362 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+MERGED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:2:1-19:12
+MERGED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:2:1-17:12
+MERGED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\72b4d95a0e8b43ee4215c0c4e8b0fb72\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-games:20.0.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\833021a3f33882d3dc440043752e3907\play-services-games-20.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\eddadf5f1c6c490683171f94dfb74ca8\play-services-drive-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2453c8ea619540df7e76d38d1cdd5f6a\play-services-auth-api-phone-17.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\c0825f9bee4c9f602631906ba5c3353c\play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f465fa4d878a3948c29430655a219918\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\5debf09d2541e0ccacc6adc6a4fdd105\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3a2f8d614676183a411d5d0a5ccffd59\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0cb8e9b70eb18e6366ea818d50894e47\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3ae307e411008a5abe35b795699599f8\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1d849761628829d2295b320ffc5152e0\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\fa1cda0d762347a9cb7d79eaeeb289e8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\366555e0658123cedccaf0883b3651bc\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\dab48ee8d761a62192a7c0c78bc8a1aa\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\850bf142cefab6ec1f243621257bf44e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f6f80dc4871d749a0cd888fb14aba5f3\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7d767b2deaf02a4aa041ae0685eb6b5e\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\263114587795ce3a15b18060381f86be\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bc6997ad05a1af84d78303dcea3eae39\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\58990e31d8d4b533b7ff983aa60b00fc\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\53bf8556c8b730ae1255779c2895d59b\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\619de63d53cf935c91c581371b6a6faa\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\041f24b39a6e5bfd79a1db377c03d8b1\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bbd5c89acb3086548b6dfeb7a06e205e\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1f0eea5572e817d886a572edc39d8e7d\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\157e39bb99c978d081f37e13d2ab360e\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7f304c13f8d08f7c389d2cae44e8a25c\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\9180283ae214e030164cb294841a7487\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0530fd952fd1ec33fcda9664c94741cf\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:1-76:12
+	package
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:4:5-29
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:6:5-30
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:5:5-28
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+	android:installLocation
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:7:5-35
+supports-screens
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:12:5-16:40
+	android:largeScreens
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:15:9-36
+	android:smallScreens
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:14:9-37
+	android:xlargeScreens
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:16:9-37
+uses-feature#0x00020000
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:19:5-21:35
+	android:glEsVersion
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:20:9-41
+	android:required
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:21:9-32
+application
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:5-74:19
+MERGED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:13:5-17:19
+MERGED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:13:5-17:19
+MERGED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:11:5-15:19
+MERGED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:11:5-15:19
+MERGED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:18:5-20:19
+MERGED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-games:20.0.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\833021a3f33882d3dc440043752e3907\play-services-games-20.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:20.0.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\833021a3f33882d3dc440043752e3907\play-services-games-20.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\eddadf5f1c6c490683171f94dfb74ca8\play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\eddadf5f1c6c490683171f94dfb74ca8\play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f465fa4d878a3948c29430655a219918\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f465fa4d878a3948c29430655a219918\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:10:3-17:17
+MERGED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:10:3-17:17
+MERGED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\619de63d53cf935c91c581371b6a6faa\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\619de63d53cf935c91c581371b6a6faa\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:requestLegacyExternalStorage
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:18:18-61
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:18-67
+	tools:ignore
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:96-135
+	android:icon
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:136-163
+	android:allowBackup
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:68-95
+meta-data#xr_mode_metadata_name
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:36:9-38:54
+	android:value
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:38:13-51
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:37:13-49
+meta-data#plugins
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:41:9-43:44
+	android:value
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:43:13-42
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:42:13-35
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:45:9-46:46
+	android:value
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:46:13-43
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:45:20-70
+meta-data#com.google.android.gms.version
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:48:9-49:64
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:49:9-62
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:48:20-65
+activity#com.godot.game.GodotApp
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:51:9-68:20
+	android:screenOrientation
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:56:13-50
+	android:label
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:53:13-62
+	android:launchMode
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:55:13-44
+	android:resizeableActivity
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:58:13-47
+	tools:ignore
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:59:13-43
+	android:configChanges
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:57:13-141
+	android:theme
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:54:13-77
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:52:13-37
+meta-data#com.oculus.vr.focusaware
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:13-88
+	android:value
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:64-85
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:24-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:64:13-67:29
+action#android.intent.action.MAIN
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:65:17-69
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:65:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:66:17-77
+	android:name
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:66:27-74
+uses-sdk
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+MERGED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:7:5-9:41
+MERGED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:7:5-9:41
+MERGED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:7:5-9:41
+MERGED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:7:5-9:41
+MERGED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:7:5-9:41
+MERGED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\72b4d95a0e8b43ee4215c0c4e8b0fb72\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\72b4d95a0e8b43ee4215c0c4e8b0fb72\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:20.0.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\833021a3f33882d3dc440043752e3907\play-services-games-20.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:20.0.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\833021a3f33882d3dc440043752e3907\play-services-games-20.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\eddadf5f1c6c490683171f94dfb74ca8\play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\eddadf5f1c6c490683171f94dfb74ca8\play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2453c8ea619540df7e76d38d1cdd5f6a\play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2453c8ea619540df7e76d38d1cdd5f6a\play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\c0825f9bee4c9f602631906ba5c3353c\play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\c0825f9bee4c9f602631906ba5c3353c\play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f465fa4d878a3948c29430655a219918\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f465fa4d878a3948c29430655a219918\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\d355471661bda046f354ae45de6dd5d6\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\5debf09d2541e0ccacc6adc6a4fdd105\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\5debf09d2541e0ccacc6adc6a4fdd105\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3a2f8d614676183a411d5d0a5ccffd59\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3a2f8d614676183a411d5d0a5ccffd59\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0cb8e9b70eb18e6366ea818d50894e47\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0cb8e9b70eb18e6366ea818d50894e47\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:4:3-70
+MERGED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:4:3-70
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3ae307e411008a5abe35b795699599f8\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\3ae307e411008a5abe35b795699599f8\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1d849761628829d2295b320ffc5152e0\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1d849761628829d2295b320ffc5152e0\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\fa1cda0d762347a9cb7d79eaeeb289e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\fa1cda0d762347a9cb7d79eaeeb289e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\366555e0658123cedccaf0883b3651bc\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\366555e0658123cedccaf0883b3651bc\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\dab48ee8d761a62192a7c0c78bc8a1aa\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\dab48ee8d761a62192a7c0c78bc8a1aa\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\850bf142cefab6ec1f243621257bf44e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\850bf142cefab6ec1f243621257bf44e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f6f80dc4871d749a0cd888fb14aba5f3\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f6f80dc4871d749a0cd888fb14aba5f3\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7d767b2deaf02a4aa041ae0685eb6b5e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7d767b2deaf02a4aa041ae0685eb6b5e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\263114587795ce3a15b18060381f86be\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\263114587795ce3a15b18060381f86be\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bc6997ad05a1af84d78303dcea3eae39\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bc6997ad05a1af84d78303dcea3eae39\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\58990e31d8d4b533b7ff983aa60b00fc\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\58990e31d8d4b533b7ff983aa60b00fc\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\53bf8556c8b730ae1255779c2895d59b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\53bf8556c8b730ae1255779c2895d59b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\619de63d53cf935c91c581371b6a6faa\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\619de63d53cf935c91c581371b6a6faa\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\041f24b39a6e5bfd79a1db377c03d8b1\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\041f24b39a6e5bfd79a1db377c03d8b1\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bbd5c89acb3086548b6dfeb7a06e205e\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\bbd5c89acb3086548b6dfeb7a06e205e\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1f0eea5572e817d886a572edc39d8e7d\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1f0eea5572e817d886a572edc39d8e7d\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\157e39bb99c978d081f37e13d2ab360e\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\157e39bb99c978d081f37e13d2ab360e\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7f304c13f8d08f7c389d2cae44e8a25c\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\7f304c13f8d08f7c389d2cae44e8a25c\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\9180283ae214e030164cb294841a7487\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\9180283ae214e030164cb294841a7487\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0530fd952fd1ec33fcda9664c94741cf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\0530fd952fd1ec33fcda9664c94741cf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		ADDED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+		INJECTED from D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:11:22-64
+meta-data#org.godotengine.plugin.v1.GodotPlayGamesServices
+ADDED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:14:9-16:74
+	android:value
+		ADDED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:16:13-71
+	android:name
+		ADDED from [GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:15:13-76
+meta-data#org.godotengine.plugin.v1.ReviewPlugin
+ADDED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:12:9-14:79
+	android:value
+		ADDED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:14:13-76
+	android:name
+		ADDED from [ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:13:13-66
+instrumentation
+ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:11:5-15:57
+	android:label
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:14:9-58
+	android:icon
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:13:9-36
+	android:targetPackage
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:15:9-54
+	android:name
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:12:9-45
+service#org.godotengine.godot.GodotDownloaderService
+ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:19:9-80
+	android:name
+		ADDED from [godot-lib.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\2f29423de5771cd0c2f475b364e10860\godot-lib.release\AndroidManifest.xml:19:18-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:8:3-74
+	android:name
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:8:20-72
+activity#com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity
+ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:5-271
+	android:process
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:152-203
+	android:enabled
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:103-126
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:240-269
+	android:launchMode
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:204-239
+	android:exported
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:127-151
+	android:name
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:15-102
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:5-226
+	android:enabled
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:96-119
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:145-174
+	android:exported
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:120-144
+	android:theme
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:175-224
+	android:name
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:15-95
+service#com.google.android.play.core.assetpacks.AssetPackExtractionService
+ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:5-145
+	android:enabled
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:96-119
+	android:exported
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:120-143
+	android:name
+		ADDED from [com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:14-95

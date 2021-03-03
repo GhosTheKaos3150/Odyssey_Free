@@ -6,13 +6,13 @@ func _ready():
 	
 	var random = int(rand_range(1, 100))
 	
-	if GlobalVals.dificuldade == "e":
+	if Global.dificuldade == "e":
 		speed -= speed*0.1
 		
-	elif GlobalVals.dificuldade == "h":
+	elif Global.dificuldade == "h":
 		speed += speed*0.1
 	
-	if (system_score >= 50 and random <= 35) or GlobalVals.dificuldade == "h":
+	if (system_score >= 50 and random <= 35) or Global.dificuldade == "h":
 		Shot = load("res://Scenes/Tiros/round_mk2/round_mk2.tscn")
 		Srange = 0.5
 	else:
@@ -21,19 +21,19 @@ func _ready():
 	$LifeBar.max_value = life
 
 func _process(delta):
-	if $Sound_HIT.volume_db != GlobalVals.db_fx_value:
-		$Sound_HIT.volume_db = GlobalVals.db_fx_value
+	if $Sound_HIT.volume_db != Global.db_fx_value:
+		$Sound_HIT.volume_db = Global.db_fx_value
 	
-	if $Sound_SHOT.volume_db != GlobalVals.db_fx_value:
-		$Sound_SHOT.volume_db = GlobalVals.db_fx_value
+	if $Sound_SHOT.volume_db != Global.db_fx_value:
+		$Sound_SHOT.volume_db = Global.db_fx_value
 	
-	if $Sound_DEATH.volume_db != GlobalVals.db_fx_value:
-		$Sound_DEATH.volume_db = GlobalVals.db_fx_value
+	if $Sound_DEATH.volume_db != Global.db_fx_value:
+		$Sound_DEATH.volume_db = Global.db_fx_value
 
 #Collision Processes
 
 func _on_Enemie_1_area_entered(area):
-	if area.creator != "Enemy":
+	if "creator" in area and area.creator != "Enemy":
 		$Collision.set_deferred("disabled", true)
 		
 		if "atk" in area:

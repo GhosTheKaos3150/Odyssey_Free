@@ -6,10 +6,10 @@ var const_rotation = 10
 func _ready():
 	speed = 500
 	
-	if GlobalVals.dificuldade == "e":
+	if Global.dificuldade == "e":
 		$Oscilator_Timer.wait_time = 0.9
 		
-	elif GlobalVals.dificuldade == "h":
+	elif Global.dificuldade == "h":
 		$Oscilator_Timer.wait_time = 0.5
 	
 	clamp(position.x, 20, 520)
@@ -28,8 +28,8 @@ func _process(delta):
 	if move_enabled and not dead:
 		rotation_degrees += const_rotation
 	
-	if $AudioStreamPlayer2D.volume_db != GlobalVals.db_fx_value:
-		$AudioStreamPlayer2D.volume_db = GlobalVals.db_fx_value
+	if $AudioStreamPlayer2D.volume_db != Global.db_fx_value:
+		$AudioStreamPlayer2D.volume_db = Global.db_fx_value
 
 func _on_Area2D_area_entered(area):
 	
@@ -50,9 +50,10 @@ func _on_Area2D_area_entered(area):
 		if life <= 0:
 			dead = true
 			rotation_degrees = 0
-			Global.play_game_service.unlock_achievement("CgkIqeCtvvUHEAIQBQ") #Impossible
-			Global.play_game_service.increment_achievement("CgkIqeCtvvUHEAIQBg", 1) #Impossible^2
-			Global.play_game_service.increment_achievement("CgkIqeCtvvUHEAIQBw", 1) #Am I a Joke to You?
+			if PGS.pgs != null and PGS.pgs.isSignedIn():
+				PGS.pgs.unlockAchievement("CgkIqeCtvvUHEAIQBQ") #Impossible
+				PGS.pgs.incrementAchievement("CgkIqeCtvvUHEAIQBg", 1) #Impossible^2
+				PGS.pgs.incrementAchievement("CgkIqeCtvvUHEAIQBw", 1) #Am I a Joke to You?
 			$AudioStreamPlayer2D.stream = load("res://Assets/Sons/Explosion.wav")
 			$AudioStreamPlayer2D.play()
 			$Sprite.play("boom")

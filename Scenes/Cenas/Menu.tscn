@@ -106,9 +106,9 @@ __meta__ = {
 }
 
 [node name="creditos_resume" type="Label" parent="creditos"]
-margin_left = 2.46686
+margin_left = 0.616213
 margin_top = 0.49707
-margin_right = 248.467
+margin_right = 328.616
 margin_bottom = 22.4971
 custom_fonts/font = SubResource( 10 )
 text = "Copyright (C) 2020 Uriel \"Ghost\" Anderson"
@@ -145,6 +145,8 @@ __meta__ = {
 
 [node name="D_Control" parent="." instance=ExtResource( 9 )]
 visible = false
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
 [connection signal="tree_exiting" from="." to="." method="_on_Menu_tree_exiting"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

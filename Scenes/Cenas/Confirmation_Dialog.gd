@@ -15,11 +15,11 @@ func _ready():
 	connect("accepted", get_parent(), "_DialogPopup_Accepted")
 
 func _process(delta):
-	if GlobalVals.db_fx_value != $Sound_POPUP.volume_db:
-		$Sound_POPUP.volume_db = GlobalVals.db_fx_value
+	if Global.db_fx_value != $Sound_POPUP.volume_db:
+		$Sound_POPUP.volume_db = Global.db_fx_value
 	
-	if GlobalVals.db_fx_value != $Sound_SELECTION.volume_db:
-		$Sound_SELECTION.volume_db = GlobalVals.db_fx_value
+	if Global.db_fx_value != $Sound_SELECTION.volume_db:
+		$Sound_SELECTION.volume_db = Global.db_fx_value
 
 func _on_Confirmation_Dialog_about_to_show():
 	$Sound_POPUP.play()
@@ -31,7 +31,7 @@ func _on_Confirmation_Dialog_about_to_show():
 
 func _on_Accept_pressed():
 	emit_signal("accepted")
-	GlobalVals._save()
+	Global._save()
 
 func _on_Deny_pressed():
 	emit_signal("denied")

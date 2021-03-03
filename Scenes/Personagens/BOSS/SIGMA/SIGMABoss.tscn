@@ -107,7 +107,7 @@ position = Vector2( 270, 70 )
 scale = Vector2( 5, 5 )
 frames = SubResource( 11 )
 animation = "idle"
-frame = 3
+frame = 1
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Chefe"]
@@ -143,9 +143,9 @@ anims/BossShip = SubResource( 13 )
 
 [node name="LifeBar" type="TextureProgress" parent="Canvas"]
 margin_left = 30.0
-margin_top = 181.0
+margin_top = 190.0
 margin_right = 130.0
-margin_bottom = 193.0
+margin_bottom = 202.0
 rect_scale = Vector2( 5, 5 )
 value = 50.0
 texture_under = SubResource( 14 )

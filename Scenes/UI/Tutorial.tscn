@@ -248,7 +248,6 @@ visible = false
 position = Vector2( 270.269, 651.499 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 11 )
-frame = 1
 playing = true
 
 [node name="Ship" type="Sprite" parent="Touch_Ship"]

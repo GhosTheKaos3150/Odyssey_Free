@@ -33,3 +33,9 @@ _popup_life+_msg,"Essas capsulas de vida especiais aumentam permanentemente sua 
 _popup_atk+_msg,"Essa capsula especial amplifica o ataque do seu canhão em 1 ATK. Mas cuidado, se você morrer você perderá essa vantagem!",This capsule increases your attack permanently by one point. It will be lost if you die.,Con esta cápsula especial ganas un punto de ataque de forma permanente. Se perderá si mueres.
 _music_l,Musica,Music,Música
 _sound_l,Sons,Sound,Sonido
+_df_easy,Fácil,Easy,Fácil
+_df_normal,Normal,Normal,Normal
+_df_hard,Difícil,Hard,Normal
+_df_msg,Selecione a Dificuldade,Select a difficulty,Seleccione dificultad
+_df_default,Ativar dificuldade padrão,Activate default difficulty mode,Activar la dificultad predeterminada 
+_df_opt_menu,Dificuldade,Difficulty,Dificultad

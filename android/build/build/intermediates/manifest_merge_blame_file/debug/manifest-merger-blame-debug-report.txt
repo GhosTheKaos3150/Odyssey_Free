@@ -1,0 +1,232 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.ghost.odyssey"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml
+11
+12    <!-- Adding custom text to the manifest is fine, but do it outside the custom USER and APPLICATION BEGIN/END comments, -->
+13    <!-- as that gets rewritten. -->
+14
+15    <supports-screens
+15-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:12:5-16:40
+16        android:largeScreens="true"
+16-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:15:9-36
+17        android:normalScreens="true"
+17-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:14:9-37
+18        android:smallScreens="true"
+18-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:13:9-36
+19        android:xlargeScreens="true" />
+19-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:16:9-37
+20
+21    <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+22    <uses-feature
+22-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:19:5-21:35
+23        android:glEsVersion="0x00020000"
+23-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:20:9-41
+24        android:required="true" />
+24-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:21:9-32
+25
+26    <instrumentation
+26-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:11:5-15:57
+27        android:name=".GodotInstrumentation"
+27-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:12:9-45
+28        android:icon="@mipmap/icon"
+28-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:13:9-36
+29        android:label="@string/godot_project_name_string"
+29-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:14:9-58
+30        android:targetPackage="org.godotengine.godot" />
+30-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:15:9-54
+31
+32    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+32-->[GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:11:5-67
+32-->[GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:11:22-64
+33    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Custom user permissions XML added by add-ons. It's recommended to add them from the export preset, though. -->
+34-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:8:3-74
+34-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:8:20-72
+35    <!-- CHUNK_USER_PERMISSIONS_BEGIN -->
+36    <!-- CHUNK_USER_PERMISSIONS_END -->
+37    <!-- Any tag in this line after android:icon will be erased when doing custom builds. -->
+38    <!-- If you want to add tags manually, do before it. -->
+39    <!-- WARNING: This should stay on a single line until the parsing code is improved. See GH-32414. -->
+40    <application
+40-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:5-74:19
+41        android:allowBackup="false"
+41-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:68-95
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.0.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\947833f03979c6d84fcd9a8feba7ce42\core-1.0.0\AndroidManifest.xml:22:18-86
+43        android:debuggable="true"
+44        android:icon="@mipmap/icon"
+44-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:136-163
+45        android:label="@string/godot_project_name_string"
+45-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:30:18-67
+46        android:requestLegacyExternalStorage="true" >
+46-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:18:18-61
+47
+48        <!-- The following metadata values are replaced when Godot exports, modifying them here has no effect. -->
+49        <!-- Do these changes in the export preset. Adding new ones is fine. -->
+50
+51
+52        <!-- XR mode metadata. This is modified by the exporter based on the selected xr mode. DO NOT CHANGE the values here. -->
+53        <meta-data
+53-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:36:9-38:54
+54            android:name="xr_mode_metadata_name"
+54-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:37:13-49
+55            android:value="xr_mode_metadata_value" />
+55-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:38:13-51
+56
+57        <!-- Metadata populated at export time and used by Godot to figure out which plugins must be enabled. -->
+58        <meta-data
+58-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:41:9-43:44
+59            android:name="plugins"
+59-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:42:13-35
+60            android:value="plugins_value" />
+60-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:43:13-42
+61        <meta-data
+61-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:45:9-46:46
+62            android:name="com.google.android.gms.games.APP_ID"
+62-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:45:20-70
+63            android:value="@string/app_id" />
+63-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:46:13-43
+64        <meta-data
+64-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:48:9-49:64
+65            android:name="com.google.android.gms.version"
+65-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:48:20-65
+66            android:value="@integer/google_play_services_version" />
+66-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:49:9-62
+67
+68        <activity
+68-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:51:9-68:20
+69            android:name="com.godot.game.GodotApp"
+69-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:52:13-37
+70            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+70-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:57:13-141
+71            android:label="@string/godot_project_name_string"
+71-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:53:13-62
+72            android:launchMode="singleTask"
+72-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:55:13-44
+73            android:resizeableActivity="false"
+73-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:58:13-47
+74            android:screenOrientation="landscape"
+74-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:56:13-50
+75            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+75-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:54:13-77
+76
+77            <!-- Focus awareness metadata is updated at export time if the user enables it in the 'Xr Features' section. -->
+78            <meta-data
+78-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:13-88
+79                android:name="com.oculus.vr.focusaware"
+79-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:24-63
+80                android:value="false" />
+80-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:62:64-85
+81
+82            <intent-filter>
+82-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:64:13-67:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:65:17-69
+83-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:65:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:66:17-77
+85-->D:\Uriel Arquivos\Arquivos de Trabalho\[1]Ghost_the_Kaos\3 - Jogos\[2] SideProjects\[0] An Outer-Space Odyssey\Odyssey_Free\android\build\AndroidManifest.xml:66:27-74
+86            </intent-filter>
+87        </activity>
+88
+89        <!-- Custom application XML added by add-ons. -->
+90        <!-- CHUNK_APPLICATION_BEGIN -->
+91        <!-- CHUNK_APPLICATION_END -->
+92
+93        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+93-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:19:9-80
+93-->[godot-lib.debug.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\4078a0b16d2c56e4a80978d5ef960a67\godot-lib.debug\AndroidManifest.xml:19:18-77
+94
+95        <meta-data
+95-->[GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:14:9-16:74
+96            android:name="org.godotengine.plugin.v1.GodotPlayGamesServices"
+96-->[GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:15:13-76
+97            android:value="io.cgisca.godot.gpgs.PlayGameServicesGodot" />
+97-->[GodotPlayGamesServices.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\16c571b1ba2fe2e21e8b121455fdc8c1\GodotPlayGamesServices.release\AndroidManifest.xml:16:13-71
+98        <meta-data
+98-->[ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:12:9-14:79
+99            android:name="org.godotengine.plugin.v1.ReviewPlugin"
+99-->[ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:13:13-66
+100            android:value="magicnut.android.godotreviewplugin.ReviewPlugin" />
+100-->[ReviewPlugin.release.aar] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\f15670d4483eb8052b55e1da7efb900d\ReviewPlugin.release\AndroidManifest.xml:14:13-76
+101
+102        <activity
+102-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+103            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+103-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+104            android:excludeFromRecents="true"
+104-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+105            android:exported="false"
+105-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+106-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+107        <!--
+108            Service handling Google Sign-In user revocation. For apps that do not integrate with
+109            Google Sign-In, this service will never be started.
+110        -->
+111        <service
+111-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+112            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+112-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+113            android:exported="true"
+113-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+114            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+114-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+115            android:visibleToInstantApps="true" />
+115-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\1e0c3034fcd356bcc13d8a63855f5e0c\play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+116
+117        <activity
+117-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+118            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+118-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+119            android:exported="false"
+119-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+120-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\96992ba8e386c900bb8f57d2baa98bcd\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+121        <activity
+121-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:5-271
+122            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+122-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:15-102
+123            android:enabled="false"
+123-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:103-126
+124            android:exported="false"
+124-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:127-151
+125            android:launchMode="singleInstance"
+125-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:204-239
+126            android:process=":playcore_missing_splits_activity"
+126-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:152-203
+127            android:stateNotNeeded="true" />
+127-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:12:240-269
+128        <activity
+128-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:5-226
+129            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+129-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:15-95
+130            android:enabled="false"
+130-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:96-119
+131            android:exported="false"
+131-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:120-144
+132            android:stateNotNeeded="true"
+132-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:145-174
+133            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+133-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:13:175-224
+134        <service
+134-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:5-145
+135            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+135-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:14-95
+136            android:enabled="false"
+136-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:96-119
+137            android:exported="true" />
+137-->[com.google.android.play:core:1.8.0] C:\Users\uriel\.gradle\caches\transforms-2\files-2.1\55fd20a458046d904f6db3aa55a1ff8c\jetified-core-1.8.0\AndroidManifest.xml:16:120-143
+138    </application>
+139
+140</manifest>

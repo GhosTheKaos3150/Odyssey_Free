@@ -16,15 +16,18 @@ func _ready():
 	$Canvas/LifeBar.value = $Chefe.life
 
 func _process(delta):
-	if $Chefe/Sound.volume_db != GlobalVals.db_fx_value:
-		$Chefe/Sound.volume_db = GlobalVals.db_fx_value
+	if $Chefe/Sound.volume_db != Global.db_fx_value:
+		$Chefe/Sound.volume_db = Global.db_fx_value
 
 func life_update(value):
 	
 	$Canvas/LifeBar.value = value
 	
 	if value <= 0:
-		Global.play_game_service.unlock_achievement("CgkIqeCtvvUHEAIQBA")
+		if PGS.pgs != null and PGS.pgs.isSignedIn():
+			PGS.pgs.unlockAchievement("CgkIqeCtvvUHEAIQBA")
+#			pass
+		
 		$Chefe/End_Timer.start()
 
 #Signal Processes
